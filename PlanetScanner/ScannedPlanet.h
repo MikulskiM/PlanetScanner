@@ -24,7 +24,7 @@ private:
 	int temperature;
 	int surfaceType;	// 1 - ugly ... 5 - beautiful
 	int waterProcentage;
-	int landMassProcentage;
+	int landmassProcentage;
 	int floraType;		//floraTypes: 1 - deadly/toxic for humans, 2 - no flora, 3 - a little bit of neutral flora, 4 - a lot of flora, some of it is eatable
 	int faunaType[2];	// faunaType[0] - existance of fauna, 0 = does NOT exist, 1 = exists; faunaType[1] - 1 - bacteria, 2 - small forms of life ... 5
 };

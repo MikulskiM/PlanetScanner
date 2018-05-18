@@ -57,19 +57,26 @@ void ScannedPlanet::oxygenScanning()
 
 };
 void ScannedPlanet::temperatureScanning() {
+	temperature = rand() % 201 - 100;
 
+	std::cout << "\n	Current temperature: " << temperature<< static_cast<char>(248) << "C" << std::endl;
 
 };
 void ScannedPlanet::surfaceScanning() {
-
-
+	/*surfaceType = rand() % 5 + 1;							// jakby to dobrze powi¹zaæ z pozosta³ymi atrybutami?
+	switch sufaceType:
+	case 1:
+		std::cout<< ""
+		*/
 };
 void ScannedPlanet::compositionScanning() {
-
+	waterProcentage = rand() % 101;
+	landmassProcentage = 100 - waterProcentage;
+	std::cout << "	This planet consists of: \n		 " << waterProcentage << "% water\n		 " << landmassProcentage << "% landmass\n";
 
 };
 void ScannedPlanet::floraScanning() {
-
+	
 
 };
 void ScannedPlanet::faunaScanning() {
