@@ -2,6 +2,7 @@
 #include <iostream>
 #include "ScannedPlanet.h"
 #include <string>
+#include <time.h>
 
 class ScannedPlanet
 {
@@ -14,6 +15,8 @@ public:
 	void compositionScanning();		// bada sk³ad procentowy planety (wody i powierzchni ziemii)
 	void floraScanning();			// bada roœlinnoœæ jeœli istnieje
 	void faunaScanning();			// bada formy ¿ycia jeœli istniej¹
+	ScannedPlanet();				//nag³ówek konstruktora
+	~ScannedPlanet();				//nag³ówek destruktora
 private:
 	std::string name;
 	int numOfMoons;
