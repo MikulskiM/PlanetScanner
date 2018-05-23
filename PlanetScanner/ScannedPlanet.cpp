@@ -77,6 +77,43 @@ void ScannedPlanet::compositionScanning() {
 };
 void ScannedPlanet::floraScanning() {
 	
+	floraType = rand() % 4 + 1;
+	int random = rand() % 3;
+
+	switch (floraType)
+	{
+		case 1:
+			std::cout << "danger! flora on this planet is toxic for humans!\n";
+			break;
+		case 2:
+			std::cout << "there is no flora on this planet\n";
+			break;
+		case 3:
+			if (temperature >= 10 && temperature <= 50 && oxygen == true)
+			{
+				switch (random) {
+				case 0:
+					std::cout << "There is a little bit of flora on this planet, some of it is known on Earth";
+				case 1:
+					std::cout << "There is a little bit of flora on this planet, all of it looks like flora from Earth";
+				case 2:
+					std::cout << "There is a little bit of flora on this planet, none of it looks like flora from Earth";
+				}
+			}
+			else
+			{
+				std::cout << "There is a little bit of flora on this planet, none of it looks like flora from Earth";
+			}
+			break;
+		case 4:
+			std::cout << "There is a lot of flora on this planet, none of it looks like flora from Earth";
+			break;
+		default:
+			break;
+	}
+	
+
+
 
 };
 void ScannedPlanet::faunaScanning() {
